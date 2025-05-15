@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumping Game</title>
+    <link href = "decorate.css" rel = "stylesheet">
+</head>
+<body>
+
+    <!-- Main Game -->
+
+    <canvas id = "wallpaper" class = "hide_content"></canvas>
+    <script src = "./js Files/Controller.js"></script>
+    <script src = "./js Files/Display.js"></script>
+    <script src = "./js Files/Engine.js"></script>
+    <script src = "./js Files/Game.js"></script>
+    <script src = "./js Files/Maingame.js"></script>
+
+    <!-- Victory Menu -->
+    
+    <div id = "cover_game" class = "hide_content">
+        <div id = "victory">
+            <div id = "text_content">
+                <p id = "congrat" >Congratz!!</p>
+                <p id = "con_text" >you have reached to destination</p>
+            </div>
+
+            <div id = victory_btn_container>
+                <button onclick = "setting_map.Retry()" class = "btn_Retry">Play again</button>
+                <button id = "next_stage" class = "btn_Retry">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Menu -->
+    <!-- First click -->
+    <div id = "wallpaper_frontGame" class = "show_content firstEnter GameMenu"></div>
+    <img src = "./js Files/picture_File/coverGame.gif" id = "front_coverGame" class = "show_content firstEnter GameMenu">
+    <span id = "load_Menu" class = "show_content firstEnter">...click to enter the game...</span>
+    <audio src = "./js Files/audio_File/game_sound.mp3" id = "Gamesound" loop></audio>
+
+    <!-- button appear after click -->
+    <button id = "start_frontGame" class = "hide_content btn_gameMenu GameMenu">Start</button>
+    <button id = "setting_Game" class = "hide_content btn_gameMenu GameMenu">Setting</button>
+    
+    <!-- Setting Menu -->
+
+    <div id = "cover_SettingGame" class = "hide_content setting"></div>
+    <div id = "setting_sound" class = "hide_content setting">
+        <h1 id = "text_volume" class = "hide_content setting">Setting Volume</h1>
+        <div id = "adjust_volume_container" class = "hide_content setting">
+            <input type = "range" id = "adjust_volume" class = "hide_content setting">
+            <p id = "text_percent_volume" class = "hide_content setting">50%</p>
+        </div>
+        <button id = "apply" class = "hide_content setting">Apply</button>
+    </div>
+
+    <!-- Stage Menu -->
+
+    <div id = "wallpaper_stage" class = "hide_content Stage_Menu">
+        <button id = "backToMainMenu">Back</button>
+        <div id = "allArrow">
+            <img src = "./js Files/picture_File/ArrowStage.png" id = "arrow1" class = "ArrowStage_spinning hide_content">
+            <img src = "./js Files/picture_File/ArrowStage.png" id = "arrow2" class = "ArrowStage_spinning hide_content">
+            <img src = "./js Files/picture_File/ArrowStage.png" id = "arrow3" class = "ArrowStage_spinning hide_content">
+        </div>
+        <div id = "allBtn_Stage">
+            <button id = "btn_stage1" class = "btn_stage"></button>
+            <button id = "btn_stage2" class = "btn_stage"></button>
+            <button id = "btn_stage3" class = "btn_stage"></button>  
+        </div> 
+        <div id = Stage_text>
+            <span class = "text_stage">Level 1</span>
+            <span class = "text_stage">Level 2</span>
+            <span class = "text_stage">Level 3</span>
+        </div>
+    </div>
+
+    <span id = "checkpoint" class = "hide_content">checkpoint!!!</span>
+
+    <!-- esc Game Menu -->
+
+    <div id = "cover_EscMenu" class = "hide_content">
+        <div id = "btn_choiceToplay_container">
+            <button id = "continue" class = "btn_ChoiceToPlay">continue</button>
+            <button id = "exit" class = "btn_ChoiceToPlay">Exit</button>
+        </div>
+    </div>
+
+    <!-- keyboard manual -->
+
+    <div id = "keyboard_manual" class = "hide_content">
+        <div id = "adEsc">
+            <span class = "ADESC">A</span>
+            <span class = "ADESC">D</span>
+            <span class = "ADESC">Esc</span>
+        </div>
+        <div id = "shift_space">
+            <span id = "Shift">Shift</span>
+            <span id = "SpaceBar">SpaceBar</span>
+        </div>
+    </div>
+
+    <script src = "./js Files/script.js"></script>
+
+</body>
+</html>

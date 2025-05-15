@@ -1,0 +1,391 @@
+/* class open-close content */
+
+.show_content{
+    display : block;
+}
+
+.hide_content{
+    display : none !important;
+}
+
+/* Victory Menu */
+
+#wallpaper{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    display: block;
+}
+
+#cover_game{
+    position: fixed;
+    width : 100vw;
+    height : 100vh;
+    left: 0;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#victory{
+    position: relative;
+    top: 150px;
+    left: 435px;
+    width: 600px;
+    height: 400px;
+    padding: 1px 10px 10px 10px;
+    display: flex;
+    justify-content : center;
+    align-items: center;
+    gap: 1px; 
+    background-color: rgb(85, 63, 72);
+    border-style: solid;
+    border-radius: 24px;
+    opacity: 1;
+}
+
+#text_content{
+    position: relative;
+    top: -100px;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    opacity: 1;
+}
+
+#congrat{
+    position: fixed;
+    font-size : 72px;
+    font-weight : bold;
+    color: rgb(234, 155, 7);
+    top: 100px;
+    left: 580px;
+    opacity: 1;
+}
+
+#con_text{
+    position: fixed;
+    font-size: 40px;
+    width: 550px;
+    top: 275px;
+    left: 500px;
+    
+}
+
+#victory_btn_container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    top: 140px;
+    left: 0;
+}
+
+.btn_Retry{
+    width : 250px;
+    height : 80px;
+    background-color: rgb(84, 40, 132);
+    font-size: 50px;    
+    border-style: solid;
+    border-radius: 16px;
+    opacity: 1;
+}
+
+/* Game Menu */
+
+#front_coverGame{
+    position: fixed;
+    top: 0;
+    left: 249px;
+
+}
+
+#wallpaper_frontGame{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(54, 44, 54);
+}
+
+#load_Menu{
+    position: fixed;
+    font-size: 32px;
+    top: 580px;
+    left: 575px;
+    color: lightblue;
+    animation: fadeBlink 2s ease-in-out infinite;
+}
+
+@keyframes fadeBlink {
+    0%   { opacity: 0; }
+    50%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+#start_frontGame{
+    position: fixed;
+    width: 200px;
+    height: 75px;
+    top: 540px;
+    left: 645px;
+    font-size: 28px;
+    border-radius: 100px;
+    border-width: 8px;
+    border-color: blue;
+    background-color: gold;
+}
+
+#setting_Game{
+    position: fixed;
+    width: 200px;
+    height: 75px;
+    top: 640px;
+    left: 645px;
+    font-size: 28px;
+    border-radius: 100px;
+    border-width: 8px;
+    border-color: blue;
+    background-color: gold;
+}
+
+/* Setting Menu */
+
+#cover_SettingGame{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#setting_sound{
+    display: grid;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    grid-auto-flow: row;
+    background-color: rgb(93, 79, 93);
+    border-color: white;
+    border-style: solid;
+    border-width: 5px;
+    top: 220px;
+    left: 450px;
+    width: 600px;
+    height: 400px;
+}
+
+#text_volume{
+    font-size: 56px;
+    color: black;
+    margin-block-start: auto;
+}
+
+#adjust_volume_container{
+    display: flex;
+    margin-left: 85px;
+    margin-bottom: 75px;
+}
+
+#text_percent_volume{
+    font-size: 20px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+#apply{
+    width: 200px;
+    height: 50px;
+    background-color: gold;
+    border-color: black;
+    border-style: solid;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 75px;
+    margin-bottom: 25px;
+}
+
+/* Stage Menu */
+
+#wallpaper_stage{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgb(54, 44, 54);
+}
+
+#backToMainMenu{
+    position: fixed;
+    width: 200px;
+    height: 50px;
+    top: 0;
+    left: 0;
+    background-color: gold;
+    border-style: solid;
+    font-size: 28px;
+}
+
+#allArrow{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+}
+
+#arrow1{
+    position: fixed;
+    top: 200px;
+    left: 314px;
+}
+
+#arrow2{
+    position: fixed;
+    top: 200px;
+    left: 712px;
+}
+
+#arrow3{
+    position: fixed;
+    top: 200px;
+    left: 1110px;
+}
+
+.ArrowStage_spinning{
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(180deg);
+    }
+}
+
+#allBtn_Stage{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    gap: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn_stage{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border-style: solid;
+}
+
+#Stage_text{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    gap: 303px;
+    top: 61%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text_stage{
+    font-size: 32px;
+    color: white;
+    width: 100px;
+}
+
+/* checkpoint */
+
+#checkpoint{
+    position: fixed;
+    font-size: 18px;
+    color: white;
+    top: 85%;
+    left: 66%;
+}
+
+/* Esc Game Menu */
+
+#cover_EscMenu{
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#btn_choiceToplay_container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 300px;
+    background-color: rgb(85, 63, 72);
+    border-radius: 24px;
+    border-style: solid;
+    gap: 40px;
+}
+
+.btn_ChoiceToPlay{
+    width: 225px;
+    height: 80px;
+    font-size: 36px;
+    background-color: rgb(84, 40, 132);
+    border-radius: 16px;
+    border-style: solid;
+}
+
+/* keyboard Manual */
+
+#keyboard_manual{
+    position: fixed;
+    display: flex;
+    top: 525px;
+    left: 20px;
+    width: 150px;
+    height: 100px;
+    background-color: transparent;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 24px;
+}
+
+#adEsc{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+#shift_space{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.ADESC{
+    border-style: solid;
+}
+
+#Shift{
+    border-style: solid;
+}
+
+#SpaceBar{
+    border-style: solid;
+}
